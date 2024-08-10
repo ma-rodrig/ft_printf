@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/10 10:30:58 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/10 10:37:54 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,10 @@ int	ft_putstr(char *str)
 
 	i = 0;
 	if (!str)
-		return ; //needed?
+		return (write(1, "(null)", 6));
 	while (str[i])
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
+		i += ft_putchar(str[i]);
+	return (i);//???????????
 }
 int	ft_putptr(unsigned long ptr)
 {
