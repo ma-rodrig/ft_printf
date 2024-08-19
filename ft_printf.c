@@ -6,13 +6,13 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:03:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/19 22:33:06 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/19 23:05:37 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_type(va_list arg, char type, int p)
+int	ft_type(va_list arg, char type)
 {
 	if (type == 'c')
 		return (ft_putchar(va_arg(arg, int)));
@@ -23,7 +23,7 @@ int	ft_type(va_list arg, char type, int p)
 	else if  (type == 'd' || type == 'i')
 		return (ft_putnbr(va_arg(arg, int)));/*
 	else if (type == 'u')
-		/*return (ft_putunsigned(va_arg(arg, unsigned int)));
+		return (ft_putunsigned(va_arg(arg, unsigned int)));
 	else if (type == 'x' || type == 'X')
 		return (ft_puthex(va_arg(arg, unsigned int), type));*/
 	else if (type == '%')
@@ -48,7 +48,7 @@ int	ft_printf(const char *str, ...)
 			p += ft_putchar(str[i]);
 		else
 		{
-			p = ft_type(arg, str[i + 1], p);
+			p = ft_type(arg, str[i + 1]);
 			i++;
 		}
 		i++;
@@ -58,15 +58,15 @@ int	ft_printf(const char *str, ...)
 }
 /*int	main(void)
 {
-	/*ft_printf("%%\n");
-	printf("%%\n");*/
-	/*ft_printf("%s\n", "1234");
-	printf("%s\n", "1234");*/
-	/*ft_printf("%i\n", -214748364222000);
-	printf("%i\n", -214748364222000);*/
+	ft_printf("%%\n");
+	printf("%%\n");
+	ft_printf("%s\n", "1234");
+	printf("%s\n", "1234");
+	ft_printf("%i\n", -214748364222000);
+	printf("%i\n", -214748364222000);
 
-	/*char	n = 'b';
+	char	n = 'b';
 	char	*ptr = &n;
 	ft_printf("%p\n", ptr);
 	printf("%p\n", ptr);
-}
+}*/

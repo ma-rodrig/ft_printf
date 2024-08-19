@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/19 22:20:16 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/19 23:07:42 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 int	ft_putchar(int c) //type c and %  ***CHECKED***
 {
 	write(1, &c, 1);
+	return (0);
 }
+
 int	ft_putstr(char *str) // type s ***CHECKED***
 {
 	int	i;
@@ -27,6 +29,8 @@ int	ft_putstr(char *str) // type s ***CHECKED***
 		i += ft_putchar(str[i]);
 	return (i);//???????????
 }
+
+
 int	ft_putptr(unsigned long ptr)
 {
 	int	i;
@@ -67,4 +71,6 @@ int	ft_putnbr(int nbr) //type d and i ***CHECKED***
 			ft_putnbr(nbr / 10);
 		ft_putchar(nbr % 10 + '0');
 	}
+	return (0);
 }
+
