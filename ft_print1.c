@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/19 19:44:44 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/19 22:20:16 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,31 @@ int	ft_putstr(char *str) // type s ***CHECKED***
 		i += ft_putchar(str[i]);
 	return (i);//???????????
 }
-/*int	ft_putptr(unsigned long ptr)
+int	ft_putptr(unsigned long ptr)
 {
 	int	i;
-	
-}*/
+	int	j;
+	char	*hexdigits;
+	char	buffer[17];
+
+	i = 0;
+	j = 0;
+	hexdigits = "0123456789abcdef";
+	j += ft_putstr("0x");
+	if (ptr == 0)
+		j += ft_putchar('0');
+	else
+	{
+		while (ptr != 0)
+		{
+			buffer[i++] = hexdigits[ptr % 16];
+			ptr /= 16;
+		}
+		while (i > 0)
+			j += ft_putchar(buffer[--i]);
+	}
+	return (j);
+}
 int	ft_putnbr(int nbr) //type d and i ***CHECKED***
 {
 	if (nbr == -2147483648)

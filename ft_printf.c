@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:03:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/19 19:45:06 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/19 22:33:06 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_type(va_list arg, char type, int p)
 		return (ft_putchar(va_arg(arg, int)));
 	else if (type == 's')
 		return (ft_putstr(va_arg(arg, char *)));
-	/*else if (type == 'p')
-		return (ft_putptr(va_arg(arg, unsigned long)));*/
+	else if (type == 'p')
+		return (ft_putptr(va_arg(arg, unsigned long)));
 	else if  (type == 'd' || type == 'i')
 		return (ft_putnbr(va_arg(arg, int)));/*
 	else if (type == 'u')
@@ -56,7 +56,7 @@ int	ft_printf(const char *str, ...)
 	va_end(arg);
 	return (p);
 }
-int	main(void)
+/*int	main(void)
 {
 	/*ft_printf("%%\n");
 	printf("%%\n");*/
@@ -64,4 +64,9 @@ int	main(void)
 	printf("%s\n", "1234");*/
 	/*ft_printf("%i\n", -214748364222000);
 	printf("%i\n", -214748364222000);*/
+
+	/*char	n = 'b';
+	char	*ptr = &n;
+	ft_printf("%p\n", ptr);
+	printf("%p\n", ptr);
 }
