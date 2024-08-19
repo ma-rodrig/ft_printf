@@ -6,17 +6,17 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/10 10:37:54 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/19 19:44:44 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(int c)
+int	ft_putchar(int c) //type c and %  ***CHECKED***
 {
 	write(1, &c, 1);
 }
-int	ft_putstr(char *str)
+int	ft_putstr(char *str) // type s ***CHECKED***
 {
 	int	i;
 
@@ -27,11 +27,12 @@ int	ft_putstr(char *str)
 		i += ft_putchar(str[i]);
 	return (i);//???????????
 }
-int	ft_putptr(unsigned long ptr)
+/*int	ft_putptr(unsigned long ptr)
 {
-	;
-}
-int	ft_putnbr(int nbr)
+	int	i;
+	
+}*/
+int	ft_putnbr(int nbr) //type d and i ***CHECKED***
 {
 	if (nbr == -2147483648)
 		ft_putstr("-2147483648");
