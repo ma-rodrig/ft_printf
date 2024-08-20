@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 19:14:02 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/19 19:26:23 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/20 20:54:10 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdio.h>
+# include <limits.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_putchar(int c);
@@ -24,6 +25,6 @@ int	ft_putstr(char *str);
 int	ft_putptr(unsigned long ptr);
 int	ft_putnbr(int nbr);
 int	ft_putunsigned(unsigned int num);
-int ft_puthex(unsigned int h, const char type);
+int	ft_puthex(unsigned int h, const char type);
 
 #endif

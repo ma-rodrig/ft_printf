@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/20 19:45:55 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/20 20:14:37 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int	ft_putchar(int c) //type c and %  ***CHECKED***
 {
-	write(1, &c, 1);
-	return (0);
+	return (write(1, &c, 1));
 }
 
 int	ft_putstr(char *str) // type s ***CHECKED***
@@ -27,14 +26,13 @@ int	ft_putstr(char *str) // type s ***CHECKED***
 		return (write(1, "(null)", 6));
 	while (str[i])
 		i += ft_putchar(str[i]);
-	return (i);//???????????
+	return (i);
 }
-
 
 int	ft_putptr(unsigned long ptr) // type void *pointer ***CHECKED***
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*hexdigits;
 	char	buffer[17];
 
@@ -56,6 +54,7 @@ int	ft_putptr(unsigned long ptr) // type void *pointer ***CHECKED***
 	}
 	return (j);
 }
+
 int	ft_putnbr(int nbr) //type d and i ***CHECKED***
 {
 	if (nbr == -2147483648)
@@ -73,4 +72,3 @@ int	ft_putnbr(int nbr) //type d and i ***CHECKED***
 	}
 	return (0);
 }
-
