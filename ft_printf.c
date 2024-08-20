@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:03:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/19 23:05:37 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/20 19:46:41 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ int	ft_type(va_list arg, char type)
 	else if (type == 'p')
 		return (ft_putptr(va_arg(arg, unsigned long)));
 	else if  (type == 'd' || type == 'i')
-		return (ft_putnbr(va_arg(arg, int)));/*
+		return (ft_putnbr(va_arg(arg, int)));
 	else if (type == 'u')
 		return (ft_putunsigned(va_arg(arg, unsigned int)));
 	else if (type == 'x' || type == 'X')
-		return (ft_puthex(va_arg(arg, unsigned int), type));*/
+		return (ft_puthex(va_arg(arg, unsigned int), type));
 	else if (type == '%')
 		return(ft_putchar('%'));
 	return (0);

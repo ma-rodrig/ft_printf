@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/19 23:07:42 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/20 19:45:55 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_putstr(char *str) // type s ***CHECKED***
 }
 
 
-int	ft_putptr(unsigned long ptr)
+int	ft_putptr(unsigned long ptr) // type void *pointer ***CHECKED***
 {
 	int	i;
 	int	j;
