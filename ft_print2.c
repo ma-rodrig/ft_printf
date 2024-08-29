@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:31:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/20 21:17:53 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/08/29 14:38:41 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_putunsigned(unsigned int num) //type u ***CHECKED***
 	return (c);
 }
 
-int	ft_puthex(unsigned int h, const char type) //type x and X
+int	ft_puthex(unsigned long h, const char type) //type x and X
 {
 	int		i;
 	int		j;
