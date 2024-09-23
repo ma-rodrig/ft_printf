@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:03:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/29 14:41:15 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/23 14:27:32 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_printf(const char *str, ...)
 			p += ft_putchar(str[i]);
 		else
 		{
-			p = ft_type(arg, str[i + 1]);
+			p += ft_type(arg, str[i + 1]);
 			i++;
 		}
 		i++;
@@ -86,16 +86,21 @@ int	ft_printf(const char *str, ...)
 	//ft_printf("%X\n", num);
 	//printf("%X\n", num);
 }*/
+
+/*
 int	main(void)
 {
-	ft_printf("%d \n", ft_printf("ola%%%"));
-	//printf("%d \n", printf("ola%%%"));
+	ft_printf("%d \n", ft_printf("ola%% %"));
+	printf("\n");
+	printf("%d \n", printf("ola%% %"));
+	printf("\n");
  
 	int teste = printf("hello world\n");
 	printf("imprimiu: %d\n", teste);
 	int teste2 = ft_printf("hello world\n");
 	ft_printf("imprimiu: %d\n", teste2);
 	printf("\n");
+	
 	int x = 42;
 	int x2 = 34;
 	void *ptrx2 = &x2;
@@ -122,7 +127,7 @@ int	main(void)
 
 	ft_printf("\n");
 	
-	printf("Hello\n");
+	printf("HELLO\n");
 	printf("%d \n", printf(""));
 	printf("%d \n", printf(NULL));
 	printf("Characters: %c %c\n", 'a', 'b');
@@ -139,4 +144,4 @@ int	main(void)
 	printf ("Mix: %c, %s, %p, %d, %i, %x, %X, %u, %%, all mixed\n", 'A', "Mix",
 		ptrx2, 34, 34, 255, 255, UINT_MAX);
 	return (0);
-}
+}*/

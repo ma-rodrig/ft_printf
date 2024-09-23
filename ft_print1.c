@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print1.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/08/29 14:46:41 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/23 14:30:08 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,22 +29,7 @@ int	ft_putstr(char *str) // type s ***CHECKED***
 	return (i);
 }
 
-/* int	ft_putptr(unsigned long int ptr) // type void *pointer ***CHECKED***
-{
-	int	j;
-
-	j = 0;
-	if(ptr == 0)
-		return(write(1,"(nil)", 5));
-	if (j == 1)
-		j += ft_putstr("0x");
-	if (j >= 16)
-		j += ft_putptr(j / 16);
-	j += write(1, &j)
-	return (j);
-} */
-
-int	ft_putptr(unsigned long ptr) // type void *pointer ***CHECKED***
+int	ft_putptr(unsigned long ptr) // type p void *pointer ***CHECKED***
 {
 	int		i;
 	int		j;
@@ -54,8 +39,8 @@ int	ft_putptr(unsigned long ptr) // type void *pointer ***CHECKED***
 	i = 0;
 	j = 0;
 	hexdigits = "0123456789abcdef";
-	if(ptr == 0)
-		return (write(1,"(nil)", 5));
+	if (ptr == 0)
+		return (write(1, "(nil)", 5));
 	else
 	{
 		j += ft_putstr("0x");
