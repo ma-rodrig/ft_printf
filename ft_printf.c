@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:03:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/28 15:21:57 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:30:43 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,8 @@ int	ft_printf(const char *str, ...)
 	ft_printf ("HEXADECIMAL 0: %x %X\n", 0, 0);
 	ft_printf ("Unsigned int: %u %u\n",  2147483647, UINT_MAX);
 	ft_printf ("Unsigned int: %u \n", UINT_MAX);
-	ft_printf ("Mix: %c, %s, %p, %d, %i, %x, %X, %u, %%, all mixed\n", 'A', "Mix",
+	ft_printf ("Mix: %c, %s, %p, %d, %i, %x, %X, %u, %%, all mixed\n",
+	 'A', "Mix",
 		ptrx2, 34, 34, 255, 255, UINT_MAX);
 
 
@@ -107,8 +108,8 @@ int	ft_printf(const char *str, ...)
 	printf (" Hexadecimal 0: %x %X\n", 0, 0);
 	printf ("Unsigned int: %u %u\n", 2147483647, UINT_MAX);
 	printf ("Unsigned int: %u \n", UINT_MAX);
-	printf ("Mix: %c, %s, %p, %d, %i, %x, %X, %u, %%, all mixed\n", 'A', "Mix",
+	printf ("Mix: %c, %s, %p, %d, %i, %x, %X, %u, %%, all mixed\n",
+	 'A', "Mix",
 		ptrx2, 34, 34, 255, 255, UINT_MAX);
 	return (0);
 } */
-
