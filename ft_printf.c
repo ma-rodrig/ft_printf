@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:03:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/28 15:30:43 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:49:34 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,6 @@ int	ft_printf(const char *str, ...)
 
 /* int	main(void)
 {
-	//ft_printf("%d \n", ft_printf("ola%%%"));
-	//printf("%d \n", printf("ola%%%"));
- 
 	int teste = printf("hello world\n");
 	printf("imprimiu: %d\n", teste);
 	int teste2 = ft_printf("hello world\n");

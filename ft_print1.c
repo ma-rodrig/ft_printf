@@ -6,18 +6,18 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/28 15:26:38 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:47:55 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(int c) //type c and %  ***CHECKED***
+int	ft_putchar(int c) //type c and %
 {
 	return (write(1, &c, 1));
 }
 
-int	ft_putstr(char *str) // type s ***CHECKED***
+int	ft_putstr(char *str) // type s
 {
 	int	i;
 
@@ -29,7 +29,7 @@ int	ft_putstr(char *str) // type s ***CHECKED***
 	return (i);
 }
 
-int	ft_putptr(unsigned long ptr) // type p void *pointer ***CHECKED***
+int	ft_putptr(unsigned long ptr) // type p void *pointer
 {
 	int		i;
 	int		j;
@@ -55,7 +55,7 @@ int	ft_putptr(unsigned long ptr) // type p void *pointer ***CHECKED***
 	return (j);
 }
 
-int	ft_putnbr(int nbr) //type d and i ***CHECKED***
+int	ft_putnbr(int nbr) //type d and i
 {
 	int	count;
 

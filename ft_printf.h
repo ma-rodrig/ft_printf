@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 19:14:02 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/28 15:20:39 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:47:25 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ int	ft_putstr(char *str);
 int	ft_putptr(unsigned long int ptr);
 int	ft_putnbr(int nbr);
 int	ft_putunsigned(unsigned int num);
-int	ft_puthex(unsigned int num, const char specifier);
+int	ft_puthex(unsigned int h, const char type);
 
 #endif

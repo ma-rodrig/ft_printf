@@ -6,13 +6,13 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:31:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/28 15:29:18 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:47:41 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putunsigned(unsigned int num) //type u ***CHECKED***
+int	ft_putunsigned(unsigned int num) //type u
 {
 	int	c;
 
