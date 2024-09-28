@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:31:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/27 16:47:51 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:20:21 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_putunsigned(unsigned int num) //type u ***CHECKED***
 	return (c);
 }
 
-int	ft_puthex(unsigned long h, const char type) //type x and X
+int	ft_puthex(unsigned int h, const char type) //type x and X
 {
 	int		i;
 	int		j;
@@ -47,8 +47,6 @@ int	ft_puthex(unsigned long h, const char type) //type x and X
 		}
 		while (i > 0)
 			j += ft_putchar(buffer[--i]);
-	}
-	buffer[0] = '\0';
+	} 
 	return (j);
 }
-

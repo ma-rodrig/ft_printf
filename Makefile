@@ -1,18 +1,17 @@
-NAME		= libftprintf
+NAME		= libftprintf.a
 INCLUDE		= ft_printf.h
 CC			= cc
 CFLAGS		= -Wall -Werror -Wextra
 
-SRCS = ft_printf.c ft_print1.c ft_print2.c main.c
+SRCS = ft_printf.c ft_print1.c ft_print2.c 
 
 OBJS	= $(SRCS:.c=.o)
 
+
+$(NAME):	$(OBJS) $(INCLUDE)
+			ar -rcs $(NAME) $(OBJS)
+
 all:		$(NAME)
-
-$(NAME):	$(OBJS) 
-			@cc -g $(OBJS) -o $(NAME)
-
-
 
 clean:
 			rm -f $(OBJS)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 19:14:02 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/23 14:26:14 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:20:39 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ int	ft_putstr(char *str);
 int	ft_putptr(unsigned long int ptr);
 int	ft_putnbr(int nbr);
 int	ft_putunsigned(unsigned int num);
-int	ft_puthex(unsigned long int h, const char type);
+int	ft_puthex(unsigned int num, const char specifier);
 
 #endif

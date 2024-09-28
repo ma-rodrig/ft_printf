@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print1.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/10 10:21:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/09/23 14:30:08 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:26:38 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,18 +57,28 @@ int	ft_putptr(unsigned long ptr) // type p void *pointer ***CHECKED***
 
 int	ft_putnbr(int nbr) //type d and i ***CHECKED***
 {
+	int	count;
+
+	count = 0;
 	if (nbr == -2147483648)
+	{
 		ft_putstr("-2147483648");
+		count = 11;
+	}
 	else
 	{
 		if (nbr < 0)
 		{
-			ft_putchar('-');
+			count += ft_putchar('-');
 			nbr *= -1;
 		}
 		if (nbr > 9)
-			ft_putnbr(nbr / 10);
-		ft_putchar(nbr % 10 + '0');
+		{
+			count += ft_putnbr(nbr / 10);
+			count += ft_putnbr(nbr % 10);
+		}
+		else
+			count += ft_putchar(nbr + '0');
 	}
-	return (0);
+	return (count);
 }
